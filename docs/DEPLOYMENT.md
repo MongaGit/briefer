@@ -75,7 +75,7 @@ Here's a step-by-step guide to deploy Briefer as a single container:
       -v briefer_jupyter_data:/home/jupyteruser \
       -v briefer_briefer_data:/home/briefer \
       --env TLD="briefer.your_domain_here.com" \
-      briefercloud/briefer
+      lorthe/briefer
    ```
 4. Expose your server to the internet or your local network.
    Make sure that you allow traffic on ports 3000 and 8080. The first one is for the Briefer web application (the one you'll access in your browser), and the second one is for the API that the web application talks to.
@@ -148,7 +148,7 @@ In case you need assistance, please don't feel shy to open an issue. We're here 
 
 If you're not able to access the web application, Briefer is either not running or not exposed to the internet (or within your local network). The latter is the most common issue.
 
-To check if Briefer is running, SSH into your server and run `docker ps`. You should see a container using the image `briefercloud/briefer` or `briefercloud/briefer-web`. If you don't see it, Briefer is not running.
+To check if Briefer is running, SSH into your server and run `docker ps`. You should see a container using the image `lorthe/briefer` or `lorthe/briefer-web`. If you don't see it, Briefer is not running.
 
 If Briefer is running, have a look at its logs and see if there are any errors. You can do that by running `docker logs <container_id>`, where `<container_id>` is the ID of the Briefer container.
 
@@ -163,7 +163,7 @@ If you want to change the domains that Briefer uses, you can do that by changing
 
 In this case, it's likely that the API is not available on `api.briefer.your_domain_here.com`, so double check that you've created the necessary DNS records using the correct values.
 
-If you do have the correct DNS records, check if the API is running by SSHing into your server and running `docker ps`. You should see a container using the image `briefercloud/briefer` or `briefercloud/briefer-api` and exposing port 8080.
+If you do have the correct DNS records, check if the API is running by SSHing into your server and running `docker ps`. You should see a container using the image `lorthe/briefer` or `lorthe/briefer-api` and exposing port 8080.
 
 If the container is running, check its logs by running `docker logs <container_id>`, where `<container_id>` is the ID of the API container. Look for any errors that might indicate why the API is not working.
 

@@ -211,7 +211,7 @@ def main():
     # Argument parser
     parser = argparse.ArgumentParser(description="Run and manage Briefer.")
     parser.add_argument("-d", "--detach", action="store_true", help="Run Briefer in detached mode")
-    parser.add_argument("--image", type=str, default="briefercloud/briefer", help=argparse.SUPPRESS)
+    parser.add_argument("--image", type=str, default="lorthe/briefer", help=argparse.SUPPRESS)
     
     args = parser.parse_args()
 

@@ -120,7 +120,7 @@ Here are a few things to try if you have trouble running Briefer in development 
 5. If you can't find the necessary `.env` files within each app's folder, try running `./start-dev.sh` again.
 6. In case the applications complain about missing environment variables, you can always delete the `.env` files and run `./start-dev.sh` again to recreate them.
 
-If you still can't run Briefer properly after following these instructions, please open an issue [here](https://github.com/briefercloud/briefer/issues).
+If you still can't run Briefer properly after following these instructions, please open an issue [here](https://github.com/lorthe/briefer/issues).
 
 <br />
 

@@ -12,16 +12,16 @@
     |
     <a href="https://briefer.cloud/blog" target="_blank">Blog</a>
     |
-    <a href="https://github.com/briefercloud/briefer">Issues</a>
+    <a href="https://github.com/lorthe/briefer">Issues</a>
     |
     <i><a href="https://app.briefer.cloud" target="_blank"><strong>Try the cloud version »</strong></a></i>
   </p>
 </p>
 
 <p align="center">
-   <a href="https://github.com/briefercloud/briefer/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/briefercloud/briefer" alt="Github Stars"></a>
+   <a href="https://github.com/lorthe/briefer/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/lorthe/briefer" alt="Github Stars"></a>
    <a href="https://pypi.org/project/briefer/" target="_blank"><img src="https://img.shields.io/pypi/v/briefer.svg?style=flat-square&label=PyPI+briefer" alt="PyPi Briefer"></a>
-   <a href="https://github.com/briefercloud/briefer/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPLv3-red" alt="License"></a>
+   <a href="https://github.com/lorthe/briefer/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPLv3-red" alt="License"></a>
    <a href="https://www.ycombinator.com/companies/briefer"><img src="https://img.shields.io/badge/Y%20Combinator-S23-orange" alt="Backed by Y Combinator S23"></a>
 </p>
 
@@ -59,7 +59,7 @@ pip install briefer
 briefer
 ```
 
-If you run Briefer using `pip`, our initialization scripts will take care of downloading [our docker image](https://hub.docker.com/r/briefercloud/briefer), setting up volumes to store Briefer's data, and starting the application.
+If you run Briefer using `pip`, our initialization scripts will take care of downloading [our docker image](https://hub.docker.com/r/lorthe/briefer), setting up volumes to store Briefer's data, and starting the application.
 
 Alternatively, you can also run Briefer using Docker directly:
 
@@ -71,7 +71,7 @@ docker run -d \
   -v briefer_psql_data:/var/lib/postgresql/data \
   -v briefer_jupyter_data:/home/jupyteruser \
   -v briefer_briefer_data:/home/briefer \
-  briefercloud/briefer
+  lorthe/briefer
 ```
 
 When running on Windows' PowerShell, it might be necessary to add an extra ``` ` ``` to the end of each line instead of the `\`, like this:
@@ -84,7 +84,7 @@ docker run -d `
   -v briefer_psql_data:/var/lib/postgresql/data `
   -v briefer_jupyter_data:/home/jupyteruser `
   -v briefer_briefer_data:/home/briefer `
-  briefercloud/briefer
+  lorthe/briefer
 ```
 
 These volumes are for Briefer to store its data, including its pages, dashboards, schedules, and users. If you want to remove Briefer's data, you can remove these volumes.

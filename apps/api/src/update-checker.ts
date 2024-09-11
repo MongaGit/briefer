@@ -48,7 +48,7 @@ export async function checkForUpdates() {
           current: version,
           latest: latestVersion,
         },
-        "You're running an outdated version of Briefer. Please check our repository at https://github.com/briefercloud/briefer to obtain the latest version."
+        "You're running an outdated version of Briefer. Please check our repository at https://github.com/lorthe/briefer to obtain the latest version."
       )
     }
   } catch (err) {

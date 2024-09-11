@@ -13,8 +13,8 @@ dependencies = ["docker", "requests"]
 
 [project.urls]
 Homepage = "https://briefer.cloud"
-Documentation = "https://github.com/briefercloud/briefer/README.md"
-Repository = "https://github.com/briefercloud/briefer"
+Documentation = "https://github.com/lorthe/briefer/README.md"
+Repository = "https://github.com/lorthe/briefer"
 
 [project.scripts]
 briefer = "briefer.main:main"

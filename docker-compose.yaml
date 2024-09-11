@@ -18,7 +18,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   db_migration:
-    image: briefercloud/briefer-api
+    image: lorthe/briefer-api
     build:
       context: '.'
       dockerfile: 'apps/api/Dockerfile'
@@ -32,7 +32,7 @@ services:
         condition: service_healthy
 
   jupyter_server:
-    image: briefercloud/briefer-jupyter
+    image: lorthe/briefer-jupyter
     labels:
       'cloud.briefer.jupyter-container': 'true'
     build:
@@ -54,7 +54,7 @@ services:
       retries: 5
 
   ai:
-    image: briefercloud/briefer-ai
+    image: lorthe/briefer-ai
     build:
       context: 'ai'
       dockerfile: 'Dockerfile'
@@ -72,7 +72,7 @@ services:
       retries: 5
 
   web:
-    image: briefercloud/briefer-web
+    image: lorthe/briefer-web
     build:
       context: '.'
       dockerfile: 'apps/web/Dockerfile'
@@ -93,7 +93,7 @@ services:
         condition: service_healthy
 
   api:
-    image: briefercloud/briefer-api
+    image: lorthe/briefer-api
     build:
       context: '.'
       dockerfile: 'apps/api/Dockerfile'
